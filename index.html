@@ -1,16 +1,95 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <meta name="description" content="好眠燕麥 Oats & Dreams，以天然燕麥與溫和保濕，陪伴寶貝每一個安心好眠。">
+    <meta name="theme-color" content="#8d9677">
+    <title>好眠燕麥 Oats &amp; Dreams｜給寶貝最溫柔的呵護</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link ref="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>Hello, world!!!</h1>
-    <script src="js/bootstrap.min.js"></script>
+    <div class="announcement-bar text-center">好眠燕麥暖心優惠　♡　全館八折起｜滿 1000 元免運費｜限時優惠至 11/30</div>
+
+    <nav class="navbar navbar-expand-lg shop-nav sticky-top" aria-label="主要導覽">
+        <div class="container">
+            <a class="navbar-brand brand-mark" href="#top" aria-label="好眠燕麥首頁">
+                <span class="bunny" aria-hidden="true">♧</span><span><strong>好眠燕麥</strong><small>Oats &amp; Dreams</small></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="切換導覽選單"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-4">
+                    <li class="nav-item"><a class="nav-link" href="#top">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">商品分類</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#story">品牌故事</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">常見問題</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">最新優惠</a></li>
+                </ul>
+                <div class="nav-tools d-flex gap-3"><a href="#products" aria-label="搜尋商品">⌕</a><a href="#footer" aria-label="會員專區">♙</a><a href="#products" aria-label="購物車">🛒<span class="cart-count">0</span></a></div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="top">
+        <section class="hero" aria-label="品牌主視覺">
+            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="第 1 張"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="第 2 張"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="第 3 張"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="img/01.jpg" class="hero-image" alt="天然燕麥與好眠燕麥寶寶舒緩乳液"><div class="hero-copy"><p class="eyebrow">OATS &amp; DREAMS　｜　SINCE 2024</p><h1>給寶貝最溫柔的呵護</h1><p class="hero-subtitle">天然燕麥・溫和保濕・安心陪伴</p><a class="btn btn-olive" href="#products">立即選購 <span aria-hidden="true">›</span></a></div></div>
+                    <div class="carousel-item"><img src="img/02.jpg" class="hero-image" alt="媽媽與寶寶的溫柔肌膚呵護"><div class="hero-copy"><p class="eyebrow">GENTLE CARE, EVERY DAY</p><h2>從第一瓶開始<br>給寶貝安心呵護</h2><p class="hero-subtitle">溫柔成分，陪伴每一個成長時刻</p><a class="btn btn-olive" href="#story">認識我們 <span aria-hidden="true">›</span></a></div></div>
+                    <div class="carousel-item"><img src="img/03.jpg" class="hero-image" alt="好眠燕麥為寶貝帶來舒適保濕"><div class="hero-copy"><p class="eyebrow">A LITTLE LOVE, A BETTER SLEEP</p><h2>溫柔呵護<br>寶貝的每一夜</h2><p class="hero-subtitle">天然燕麥 × 溫和保濕</p><a class="btn btn-olive" href="#products">探索系列 <span aria-hidden="true">›</span></a></div></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="上一張"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="下一張"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
+            </div>
+        </section>
+
+        <div class="container storefront">
+            <section id="categories" class="category-grid row g-3" aria-label="商品分類">
+                <div class="col-6 col-md"><a class="category-card" href="#products"><span class="category-icon">♧</span><span>臉部保養 <b>›</b></span></a></div>
+                <div class="col-6 col-md"><a class="category-card" href="#products"><span class="category-icon coral">♡</span><span>身體保濕 <b>›</b></span></a></div>
+                <div class="col-6 col-md"><a class="category-card" href="#products"><span class="category-icon">☁</span><span>洗沐清潔 <b>›</b></span></a></div>
+                <div class="col-6 col-md"><a class="category-card" href="#products"><span class="category-icon">☺</span><span>寶寶專區 <b>›</b></span></a></div>
+                <div class="col-12 col-md"><a class="category-card" href="#products"><span class="category-icon coral">♧</span><span>組合優惠 <b>›</b></span></a></div>
+            </section>
+
+            <section id="story" class="story row align-items-center g-4">
+                <div class="col-lg-5"><img src="img/02.jpg" class="story-image" alt="媽媽親吻寶寶，傳遞溫柔呵護"></div>
+                <div class="col-lg-5 story-copy"><p class="section-kicker">OUR STORY</p><h2>品牌故事｜源自一位媽媽的愛</h2><p>好眠燕麥 Oats &amp; Dreams，源自一位媽媽對寶寶柔嫩肌膚的愛。我們相信，最好的呵護來自天然與簡單，因此選用天然燕麥，以溫和、純粹的配方，細心呵護寶寶敏感脆弱的每一寸肌膚。</p><p>希望每個家庭，都能在日常的保養與陪伴中，感受到安心、溫柔與幸福。</p><a class="btn btn-olive btn-sm" href="#footer">了解更多　›</a></div>
+                <div class="col-lg-2 story-sprig" aria-hidden="true">🌾</div>
+            </section>
+
+            <section class="promise row g-0" aria-label="品牌理念">
+                <div class="col-md-4 promise-item"><span class="promise-icon">🌿</span><div><h3>天然燕麥，溫柔呵護</h3><p>嚴選天然燕麥精華，給肌膚最細緻的滋養。</p></div></div>
+                <div class="col-md-4 promise-item"><span class="promise-icon">♧</span><div><h3>溫和保濕，安心陪伴</h3><p>溫和低敏配方，長效保濕、舒緩乾燥不適。</p></div></div>
+                <div class="col-md-4 promise-item"><span class="promise-icon">☾</span><div><h3>讓每一天都好眠 ♡</h3><p>從日常保養開始，守護寶貝舒適好眠。</p></div></div>
+            </section>
+
+            <section id="products" class="products-section">
+                <div class="section-heading"><h2><span>🌿</span> 人氣推薦商品</h2><a href="#products">查看更多商品　›</a></div>
+                <div class="row g-3 product-grid">
+                    <div class="col-12 col-sm-6 col-lg-3"><article class="product-card"><img src="img/01.jpg" alt="燕麥舒緩乳液"><div class="product-info"><h3>燕麥溫和洗髮沐浴露</h3><p>500 ml</p><div class="rating">★ <span>4.9（326 則評價）</span></div><strong class="price">$680</strong><a class="btn btn-olive btn-sm" href="#footer">🛒 加入購物車</a></div></article></div>
+                    <div class="col-12 col-sm-6 col-lg-3"><article class="product-card"><img src="img/02.jpg" alt="燕麥高效保濕乳霜"><div class="product-info"><h3>燕麥高效保濕乳霜</h3><p>150 ml</p><div class="rating">★ <span>4.8（211）</span></div><strong class="price">$580</strong><a class="btn btn-olive btn-sm" href="#footer">🛒 加入購物車</a></div></article></div>
+                    <div class="col-12 col-sm-6 col-lg-3"><article class="product-card"><img src="img/04.png" alt="燕麥舒緩修護霜"><div class="product-info"><h3>燕麥舒緩修護霜</h3><p>100 ml</p><div class="rating">★ <span>4.9（298）</span></div><strong class="price">$620</strong><a class="btn btn-olive btn-sm" href="#footer">🛒 加入購物車</a></div></article></div>
+                    <div class="col-12 col-sm-6 col-lg-3"><article class="product-card"><span class="product-badge">組合優惠</span><img src="img/03.jpg" alt="寶寶深層呵護組"><div class="product-info"><h3>寶寶深層呵護組</h3><p>（洗沐＋乳液）</p><div class="rating">★ <span>4.9（467）</span></div><strong class="price">$1,080</strong><a class="btn btn-olive btn-sm" href="#footer">🛒 加入購物車</a></div></article></div>
+                </div>
+            </section>
+
+            <section class="reviews-section"><div class="section-heading"><h2><span>🌿</span> 媽媽們的暖心回饋 ♡</h2><div class="review-arrows"><button aria-label="上一則">‹</button><button aria-label="下一則">›</button></div></div><div class="row g-3"><div class="col-md-4"><article class="review-card"><span class="avatar">👩🏻</span><div><h3>小安媽咪</h3><div class="stars">★★★★★　5.0</div><p>寶寶洗完澡後，買了很久都沒用的乳液終於派上用場，洗澡也不再抗拒，真的很喜歡！</p></div></article></div><div class="col-md-4"><article class="review-card"><span class="avatar">👩🏻</span><div><h3>沛沛媽媽</h3><div class="stars">★★★★★　5.0</div><p>天然燕麥的香氣很舒服又安心，擦完寶寶眼睛都亮起來！</p></div></article></div><div class="col-md-4"><article class="review-card"><span class="avatar">👩🏻</span><div><h3>晨晨媽咪</h3><div class="stars">★★★★★　5.0</div><p>全家一起使用也很安心，溫和不刺激，給了寶寶最溫柔的呵護！</p></div></article></div></div></section>
+
+            <section id="faq" class="faq-section"><h2><span>🌿</span> 常見問題 FAQ</h2><div class="row g-2"><div class="col-md-6"><details><summary>Q1：產品適合多大的寶寶使用呢？</summary><p>配方溫和，建議依商品說明使用；第一次使用可先做局部肌膚測試。</p></details><details><summary>Q2：敏感肌也可以使用嗎？</summary><p>每位寶寶膚況不同，敏感肌建議先諮詢專業醫師。</p></details></div><div class="col-md-6"><details><summary>Q4：產品是否含有香料、酒精或刺激成分？</summary><p>請參考各商品完整成分標示，如有疑慮可聯絡客服。</p></details><details><summary>Q4：訂單多久會出貨？運費如何計算？</summary><p>滿 NT$1,000 享免運優惠，出貨時間請參考購物須知。</p></details></div></div></section>
+        </div>
+    </main>
+
+    <footer id="footer" class="site-footer"><div class="container footer-content"><div class="footer-brand"><span class="bunny">♧</span><div><strong>好眠燕麥</strong><small>Oats &amp; Dreams</small><p>天然燕麥・溫和保濕・安心陪伴</p></div></div><div class="footer-col"><h2>關於我們</h2><a href="#story">品牌故事</a><a href="#story">品牌理念</a><a href="#products">最新消息</a></div><div class="footer-col"><h2>購物指南</h2><a href="#products">商品分類</a><a href="#faq">付款方式</a><a href="#faq">配送與運費</a><a href="#faq">退換貨政策</a></div><div class="footer-col contact"><h2>客服資訊</h2><a href="mailto:service@oatsanddreams.com.tw">✉　service@oatsanddreams.com.tw</a><a href="tel:025049019">☎　(02) 2504-9019</a><span>◷　客服時間：週一至週五 09:00–18:00</span><span>（國定假日除外）</span></div><div class="footer-col social"><h2>追蹤我們</h2><div><a href="#footer" aria-label="Instagram">◎</a><a href="#footer" aria-label="Facebook">f</a><a href="#footer" aria-label="YouTube">▶</a></div></div></div><div class="copyright">© 2026 Oats &amp; Dreams 好眠燕麥</div></footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
